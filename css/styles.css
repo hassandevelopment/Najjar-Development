@@ -703,6 +703,119 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 }
 .work-cta__sub { font-size: 13px; color: #B0B0B0; }
 
+/* ── PanoPros Featured Card ── */
+.panopros-section {
+  padding: 0 var(--page-px) 48px;
+}
+
+.panopros-card {
+  background: var(--bg-dark);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.panopros-card__preview {
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  position: relative;
+  background: #111;
+  flex-shrink: 0;
+}
+.panopros-card__thumb-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.panopros-card__thumb-link::after {
+  content: "Visit PanoPros →";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 87, 34, 0.88);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+.panopros-card__thumb-link:hover::after { opacity: 1; }
+.panopros-card__preview iframe {
+  width: 200%;
+  height: 200%;
+  border: none;
+  pointer-events: none;
+  transform: scale(0.5);
+  transform-origin: top left;
+  display: block;
+}
+
+.panopros-card__body {
+  padding: 28px 24px 32px;
+}
+
+.panopros-badge {
+  display: inline-block;
+  background: var(--accent-orange);
+  color: #fff;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+
+.panopros-card__eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.panopros-card__title {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.panopros-card__desc {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #B0B0B0;
+  margin-bottom: 20px;
+  max-width: 520px;
+}
+
+.panopros-card__services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.panopros-service {
+  font-size: 11px;
+  font-weight: 700;
+  color: #888;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
+  padding: 5px 10px;
+  letter-spacing: 0.3px;
+}
+
 /* ============================================================
    TABLET (768px+)
    ============================================================ */
@@ -744,6 +857,23 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
     padding: 40px 36px;
   }
   .final-cta__card > div:first-child { flex: 1; }
+
+  .panopros-card {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .panopros-card__preview {
+    width: 55%;
+    aspect-ratio: unset;
+    min-height: 320px;
+  }
+  .panopros-card__body {
+    width: 45%;
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .work-grid { grid-template-columns: repeat(2, 1fr); }
 
