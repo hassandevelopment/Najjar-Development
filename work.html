@@ -62,6 +62,64 @@
       letter-spacing: -0.3px;
     }
 
+    /* PanoPros branded thumbnail */
+    .project-card__thumb--panopros {
+      background: #0A0A0A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .panopros-thumb {
+      text-align: center;
+      padding: 24px;
+    }
+    .panopros-thumb__dot {
+      width: 12px;
+      height: 12px;
+      background: #FF5722;
+      border-radius: 50%;
+      margin: 0 auto 14px;
+    }
+    .panopros-thumb__name {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .panopros-thumb__tagline {
+      font-size: 10px;
+      color: #666;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+    .panopros-thumb__services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .panopros-thumb__services span {
+      font-size: 9px;
+      font-weight: 700;
+      color: #555;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 3px;
+      padding: 3px 8px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .panopros-thumb__url {
+      font-size: 10px;
+      font-weight: 700;
+      color: #FF5722;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
     /* Overlay on hover to hint clickability */
     .project-card__thumb-link {
       display: block;
@@ -128,15 +186,19 @@
               rel="noopener noreferrer"
               aria-label="View PanoPros website live"
             >
-              <div class="project-card__thumb">
-                <iframe
-                  src="https://www.panopros.bh"
-                  title="PanoPros website preview"
-                  loading="lazy"
-                  scrolling="no"
-                  tabindex="-1"
-                  aria-hidden="true"
-                ></iframe>
+              <div class="project-card__thumb project-card__thumb--panopros">
+                <div class="panopros-thumb">
+                  <div class="panopros-thumb__dot" aria-hidden="true"></div>
+                  <div class="panopros-thumb__name">PanoPros</div>
+                  <div class="panopros-thumb__tagline">Professional media. Serious results.</div>
+                  <div class="panopros-thumb__services">
+                    <span>Photography</span>
+                    <span>Virtual Tours</span>
+                    <span>Floor Plans</span>
+                    <span>Virtual Staging</span>
+                  </div>
+                  <div class="panopros-thumb__url">panopros.bh</div>
+                </div>
               </div>
             </a>
             <div class="project-card__body">
