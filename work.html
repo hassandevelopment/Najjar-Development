@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Work — Hassan Development</title>
+  <meta name="description" content="A selection of websites built for businesses across Bahrain — car detailing, restaurants, and service businesses.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="My Work — Hassan Development">
+  <meta property="og:description" content="A selection of websites built for businesses across Bahrain.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-image.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* Project thumbnail previews */
+    .project-card__thumb {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #0A0A0A;
+      position: relative;
+    }
+
+    .project-card__thumb iframe {
+      width: 200%;
+      height: 200%;
+      border: none;
+      pointer-events: none;
+      transform: scale(0.5);
+      transform-origin: top left;
+      display: block;
+    }
+
+    .project-card__thumb--placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 100%);
+      border: 2px dashed #2A2A2A;
+    }
+
+    .coming-soon-label {
+      text-align: center;
+      padding: 20px;
+    }
+    .coming-soon-label__eyebrow {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    .coming-soon-label__text {
+      font-size: 16px;
+      font-weight: 900;
+      color: rgba(255,255,255,0.2);
+      letter-spacing: -0.3px;
+    }
+
+    /* Overlay on hover to hint clickability */
+    .project-card__thumb-link {
+      display: block;
+      position: relative;
+    }
+    .project-card__thumb-link::after {
+      content: "View Live →";
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 87, 34, 0.85);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 200ms ease;
+    }
+    .project-card__thumb-link:hover::after { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Nav -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="brand-mark" aria-label="Hassan Development — Home">
+        <div class="brand-mark__dot" aria-hidden="true"></div>
+        <span class="brand-mark__name">Hassan Development</span>
+      </a>
+      <div style="display:flex;gap:12px;">
+        <a href="packages.html" class="btn btn--primary" style="padding:10px 18px;font-size:13px;">View Packages →</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- Page Header -->
+    <header class="page-header fade-up">
+      <div class="container">
+        <span class="eyebrow">Portfolio</span>
+        <h1 class="section-title">Recent work.</h1>
+        <p class="section-subtitle">A selection of websites I've built for businesses across Bahrain.</p>
+      </div>
+    </header>
+
+    <!-- Work Grid -->
+    <section class="work-section" aria-labelledby="work-heading">
+      <div class="container">
+        <h2 id="work-heading" class="visually-hidden">Projects</h2>
+        <div class="work-grid">
+
+          <!-- Project 1: 3D Car Spa -->
+          <article class="project-card fade-up" aria-label="3D Car Spa project">
+            <a
+              class="project-card__thumb-link"
+              href="https://hassandevelopment.github.io/3D-Car-Spa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View 3D Car Spa website live"
+            >
+              <div class="project-card__thumb">
+                <iframe
+                  src="https://hassandevelopment.github.io/3D-Car-Spa/"
+                  title="3D Car Spa website preview"
+                  loading="lazy"
+                  scrolling="no"
+                  tabindex="-1"
+                  aria-hidden="true"
+                ></iframe>
+              </div>
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__client">Car Detailing · Hidd, Bahrain</div>
+              <div class="project-card__title">3D Car Spa</div>
+              <p class="project-card__desc">Premium mobile car detailing with a spa-quality finish — comes to you anywhere in Bahrain.</p>
+              <a
+                href="https://hassandevelopment.github.io/3D-Car-Spa/"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View 3D Car Spa website live"
+              >
+                View Live →
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Evergood Car Wash -->
+          <article class="project-card fade-up" aria-label="Evergood Carwash & Polishing project">
+            <a
+              class="project-card__thumb-link"
+              href="https://hassandevelopment.github.io/Evergood-Car-Wash-and-Polishing/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Evergood Carwash website live"
+            >
+              <div class="project-card__thumb">
+                <iframe
+                  src="https://hassandevelopment.github.io/Evergood-Car-Wash-and-Polishing/"
+                  title="Evergood Carwash & Polishing website preview"
+                  loading="lazy"
+                  scrolling="no"
+                  tabindex="-1"
+                  aria-hidden="true"
+                ></iframe>
+              </div>
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__client">Mobile Car Wash · Manama, Bahrain</div>
+              <div class="project-card__title">Evergood Carwash & Polishing</div>
+              <p class="project-card__desc">Reliable, hand-wash mobile detailing — no swirl marks, no shortcuts, straight to your door.</p>
+              <a
+                href="https://hassandevelopment.github.io/Evergood-Car-Wash-and-Polishing/"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Evergood Carwash website live"
+              >
+                View Live →
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Gusto -->
+          <article class="project-card fade-up" aria-label="Gusto Pizzeria Ristorante project">
+            <a
+              class="project-card__thumb-link"
+              href="https://hassandevelopment.github.io/Gusto/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Gusto Pizzeria website live"
+            >
+              <div class="project-card__thumb">
+                <iframe
+                  src="https://hassandevelopment.github.io/Gusto/"
+                  title="Gusto Pizzeria Ristorante website preview"
+                  loading="lazy"
+                  scrolling="no"
+                  tabindex="-1"
+                  aria-hidden="true"
+                ></iframe>
+              </div>
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__client">Italian Restaurant · Bahrain</div>
+              <div class="project-card__title">Gusto Pizzeria Ristorante</div>
+              <p class="project-card__desc">Authentic wood-fired Italian dining — a full-service restaurant site built to drive reservations.</p>
+              <a
+                href="https://hassandevelopment.github.io/Gusto/"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Gusto Pizzeria website live"
+              >
+                View Live →
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Carbon Auto Studio -->
+          <article class="project-card fade-up" aria-label="Carbon Auto Studio project">
+            <a
+              class="project-card__thumb-link"
+              href="https://hassandevelopment.github.io/Carbon-Auto-Studio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Carbon Auto Studio website live"
+            >
+              <div class="project-card__thumb">
+                <iframe
+                  src="https://hassandevelopment.github.io/Carbon-Auto-Studio/"
+                  title="Carbon Auto Studio website preview"
+                  loading="lazy"
+                  scrolling="no"
+                  tabindex="-1"
+                  aria-hidden="true"
+                ></iframe>
+              </div>
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__client">Premium Car Care · Tubli, Bahrain</div>
+              <div class="project-card__title">Carbon Auto Studio</div>
+              <p class="project-card__desc">Studio + mobile van premium detailing — ceramic coatings, PPF, and paint correction for daily drivers to GT3s.</p>
+              <a
+                href="https://hassandevelopment.github.io/Carbon-Auto-Studio/"
+                class="project-card__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Carbon Auto Studio website live"
+              >
+                View Live →
+              </a>
+            </div>
+          </article>
+
+          <!-- Coming Soon -->
+          <article class="project-card project-card--placeholder fade-up" aria-label="More projects coming soon">
+            <div class="project-card__thumb project-card__thumb--placeholder" aria-hidden="true">
+              <div class="coming-soon-label">
+                <div class="coming-soon-label__eyebrow">Next Project</div>
+                <div class="coming-soon-label__text">Coming Soon</div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__client">Your Business · Bahrain</div>
+              <div class="project-card__title">More projects launching soon</div>
+              <p class="project-card__desc">New client work in progress. Want to see your business here?</p>
+              <a href="https://wa.me/97333330340" class="project-card__link" target="_blank" rel="noopener noreferrer">
+                Get in Touch →
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Work CTA -->
+    <section class="work-cta fade-up" aria-labelledby="work-cta-heading">
+      <div class="container">
+        <div class="work-cta__card">
+          <div>
+            <span class="eyebrow work-cta__eyebrow">Let's Work Together</span>
+            <div class="work-cta__title" id="work-cta-heading">Want to be next? Let's talk.</div>
+            <div class="work-cta__sub">Reach out on WhatsApp and we'll start with a quick discovery call.</div>
+          </div>
+          <a
+            href="https://wa.me/97333330340"
+            class="btn btn--whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Message Hassan Development on WhatsApp"
+          >
+            Message on WhatsApp →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-strip">
+    <div class="container">
+      <a href="index.html" class="brand-mark" aria-label="Hassan Development — Home">
+        <div class="brand-mark__dot" aria-hidden="true"></div>
+        <span class="brand-mark__name">Hassan Development</span>
+      </a>
+      <span class="footer-strip__copy">&copy; 2026 Hassan Development — Kingdom of Bahrain</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
