@@ -1,4 +1,4 @@
-/* Hassan Development — main.js */
+/* Najjar Development — main.js */
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

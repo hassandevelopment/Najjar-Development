@@ -1,6 +1,6 @@
-# Hassan Development — Website
+# Najjar Development — Website
 
-Personal business website for Hassan Development, a freelance web design business based in Bahrain.
+Personal business website for Najjar Development, a freelance web design business based in Bahrain.
 
 ## Pages
 
