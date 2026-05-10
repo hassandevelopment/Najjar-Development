@@ -894,3 +894,78 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 
   .process-grid { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* ============================================================
+   LANGUAGE TOGGLE BUTTON
+   ============================================================ */
+.btn-lang {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: var(--radius-btn);
+  border: 1.5px solid var(--border-light);
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  font-family: var(--font);
+  flex-shrink: 0;
+}
+.btn-lang:hover {
+  background: var(--text-primary);
+  color: #fff;
+  border-color: var(--text-primary);
+}
+.btn-lang:focus-visible {
+  outline: 2px solid var(--accent-orange);
+  outline-offset: 3px;
+}
+
+/* ============================================================
+   RTL OVERRIDES (Arabic)
+   ============================================================ */
+[dir="rtl"] body {
+  font-family: 'Helvetica Neue', 'Segoe UI', Tahoma, Arial, sans-serif;
+}
+
+/* Notes box border flips sides */
+[dir="rtl"] .notes-box {
+  border-left: none;
+  border-right: 3px solid var(--accent-orange);
+}
+
+/* Package price aligns left in RTL */
+[dir="rtl"] .pkg-price {
+  text-align: left;
+}
+[dir="rtl"] .pkg-price__amount {
+  justify-content: flex-start;
+}
+[dir="rtl"] .pkg-price__note {
+  text-align: left;
+}
+
+/* Care plan divider flips */
+@media (min-width: 768px) {
+  [dir="rtl"] .care-plan-card__right {
+    border-left: none;
+    border-right: 1px solid var(--border-mid);
+    padding-left: 0;
+    padding-right: 24px;
+    text-align: left;
+  }
+}
+
+/* Care plan feature item bullet margin flips */
+[dir="rtl"] .care-plan__feature-item {
+  margin-right: 0;
+  margin-left: 18px;
+}
+
+/* Orange divider aligns right in RTL */
+[dir="rtl"] .orange-divider {
+  margin-left: auto;
+  margin-right: 0;
+}

@@ -24,10 +24,11 @@
     <div class="container">
       <a href="index.html" class="brand-mark" aria-label="Najjar Development — Home">
         <div class="brand-mark__dot" aria-hidden="true"></div>
-        <span class="brand-mark__name">Najjar Development</span>
+        <span class="brand-mark__name" data-i18n="brand-name">Najjar Development</span>
       </a>
-      <div style="display:flex;gap:12px;">
-        <a href="work.html" class="btn btn--secondary" style="padding:10px 18px;font-size:13px;">See My Work →</a>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <a href="work.html" class="btn btn--secondary" style="padding:10px 18px;font-size:13px;" data-i18n="nav-work-btn">See My Work →</a>
+        <button class="btn-lang" id="lang-toggle" data-i18n="lang-toggle">AR</button>
       </div>
     </div>
   </nav>
@@ -37,9 +38,9 @@
     <!-- Page Header -->
     <header class="page-header fade-up">
       <div class="container">
-        <span class="eyebrow">Choose Your Package</span>
-        <h1 class="section-title">Three ways to get online.</h1>
-        <p class="section-subtitle">Pick the package that matches where your business is right now. Every site is custom-coded, mobile-first, and built to last.</p>
+        <span class="eyebrow" data-i18n="pkg-page-eyebrow">Choose Your Package</span>
+        <h1 class="section-title" data-i18n="pkg-page-title">Three ways to get online.</h1>
+        <p class="section-subtitle" data-i18n="pkg-page-subtitle">Pick the package that matches where your business is right now. Every site is custom-coded, mobile-first, and built to last.</p>
       </div>
     </header>
 
@@ -53,27 +54,27 @@
           <article class="pkg-card fade-up" aria-label="Starter package">
             <div class="pkg-header">
               <div class="pkg-header__left">
-                <div class="pkg-number">PACKAGE 01</div>
-                <div class="pkg-name">Starter</div>
-                <div class="pkg-tagline">A clean, professional online presence — fast.</div>
+                <div class="pkg-number" data-i18n="pkg-01-num">PACKAGE 01</div>
+                <div class="pkg-name" data-i18n="pkg-01-name">Starter</div>
+                <div class="pkg-tagline" data-i18n="pkg-01-tagline">A clean, professional online presence — fast.</div>
               </div>
               <div class="pkg-price">
                 <div class="pkg-price__amount">
                   <span class="pkg-price__currency">BD</span>
                   <span class="pkg-price__number">250</span>
                 </div>
-                <div class="pkg-price__note">ONE-TIME</div>
+                <div class="pkg-price__note" data-i18n="pkg-price-once">ONE-TIME</div>
               </div>
             </div>
             <ul class="pkg-features" aria-label="Starter features">
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Single-page professional website</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Fully mobile-responsive design</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>WhatsApp button on every section</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Contact form integration</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Basic SEO setup (Google-ready)</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Hosting &amp; domain setup support</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Delivered live in 7 days</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>1 round of revisions included</li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-01-f1">Single-page professional website</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-01-f2">Fully mobile-responsive design</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-01-f3">WhatsApp button on every section</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-01-f4">Contact form integration</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-01-f5">Basic SEO setup (Google-ready)</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-01-f6">Hosting &amp; domain setup support</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-01-f7">Delivered live in 7 days</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-01-f8">1 round of revisions included</span></li>
             </ul>
           </article>
 
@@ -81,30 +82,30 @@
           <article class="pkg-card pkg-card--featured fade-up" aria-label="Business package — Most Popular">
             <div class="pkg-header">
               <div class="pkg-header__left">
-                <span class="featured-pill">Most Popular</span>
-                <div class="pkg-number">PACKAGE 02</div>
-                <div class="pkg-name">Business</div>
-                <div class="pkg-tagline">Built to win customers, not just exist online.</div>
+                <span class="featured-pill" data-i18n="pkg-featured-pill">Most Popular</span>
+                <div class="pkg-number" data-i18n="pkg-02-num">PACKAGE 02</div>
+                <div class="pkg-name" data-i18n="pkg-02-name">Business</div>
+                <div class="pkg-tagline" data-i18n="pkg-02-tagline">Built to win customers, not just exist online.</div>
               </div>
               <div class="pkg-price">
                 <div class="pkg-price__amount">
                   <span class="pkg-price__currency">BD</span>
                   <span class="pkg-price__number">400</span>
                 </div>
-                <div class="pkg-price__note">ONE-TIME</div>
+                <div class="pkg-price__note" data-i18n="pkg-price-once">ONE-TIME</div>
               </div>
             </div>
             <ul class="pkg-features" aria-label="Business features">
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Multi-section custom website</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Hero, Services, Gallery, About, Contact</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Custom design matched to your brand</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Photo optimization from your content</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Smooth animations &amp; transitions</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>WhatsApp + contact form + Maps</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Google Business listing setup</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Advanced SEO foundation</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Delivered live in 10 days</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>2 rounds of revisions included</li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f1">Multi-section custom website</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f2">Hero, Services, Gallery, About, Contact</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f3">Custom design matched to your brand</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f4">Photo optimization from your content</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f5">Smooth animations &amp; transitions</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f6">WhatsApp + contact form + Maps</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f7">Google Business listing setup</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f8">Advanced SEO foundation</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f9">Delivered live in 10 days</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-02-f10">2 rounds of revisions included</span></li>
             </ul>
           </article>
 
@@ -112,27 +113,27 @@
           <article class="pkg-card fade-up" aria-label="Premium package">
             <div class="pkg-header">
               <div class="pkg-header__left">
-                <div class="pkg-number">PACKAGE 03</div>
-                <div class="pkg-name">Premium</div>
-                <div class="pkg-tagline">For businesses ready to compete and grow online.</div>
+                <div class="pkg-number" data-i18n="pkg-03-num">PACKAGE 03</div>
+                <div class="pkg-name" data-i18n="pkg-03-name">Premium</div>
+                <div class="pkg-tagline" data-i18n="pkg-03-tagline">For businesses ready to compete and grow online.</div>
               </div>
               <div class="pkg-price">
                 <div class="pkg-price__amount">
                   <span class="pkg-price__currency">BD</span>
                   <span class="pkg-price__number">650</span>
                 </div>
-                <div class="pkg-price__note">ONE-TIME</div>
+                <div class="pkg-price__note" data-i18n="pkg-price-once">ONE-TIME</div>
               </div>
             </div>
             <ul class="pkg-features" aria-label="Premium features">
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Everything in the Business package</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Booking / inquiry system integration</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Bilingual support (English + Arabic)</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Blog or updates section</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Social media feed integration</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Performance &amp; analytics dashboard</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>First 3 months of updates included</li>
-              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span>Unlimited revisions until perfect</li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-03-f1">Everything in the Business package</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-03-f2">Booking / inquiry system integration</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-03-f3">Bilingual support (English + Arabic)</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-03-f4">Blog or updates section</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-03-f5">Social media feed integration</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-03-f6">Performance &amp; analytics dashboard</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-03-f7">First 3 months of updates included</span></li>
+              <li class="pkg-feature"><span class="pkg-feature__check" aria-hidden="true">✓</span><span data-i18n="pkg-03-f8">Unlimited revisions until perfect</span></li>
             </ul>
           </article>
 
@@ -143,20 +144,20 @@
     <!-- Care Plan -->
     <section class="care-plan-section fade-up" aria-labelledby="care-heading">
       <div class="container">
-        <span class="eyebrow">Keep It Running</span>
-        <h2 id="care-heading" class="section-title" style="font-size:30px;">Monthly maintenance.</h2>
-        <p class="section-subtitle" style="margin-bottom:20px;">Your website is a living thing — it needs updates, security patches, and changes. Optional, but recommended.</p>
+        <span class="eyebrow" data-i18n="care-eyebrow">Keep It Running</span>
+        <h2 id="care-heading" class="section-title" style="font-size:30px;" data-i18n="care-title">Monthly maintenance.</h2>
+        <p class="section-subtitle" style="margin-bottom:20px;" data-i18n="care-subtitle">Your website is a living thing — it needs updates, security patches, and changes. Optional, but recommended.</p>
         <div class="care-plan-card">
           <div class="care-plan-card__left">
-            <div class="care-plan__name">Care Plan</div>
-            <div class="care-plan__tagline">Hands-off site management so you can focus on your business.</div>
+            <div class="care-plan__name" data-i18n="care-name">Care Plan</div>
+            <div class="care-plan__tagline" data-i18n="care-tagline">Hands-off site management so you can focus on your business.</div>
             <div class="care-plan__features">
-              <span class="care-plan__feature-item">Hosting &amp; uptime monitoring</span>
-              <span class="care-plan__feature-item">Content updates</span>
-              <span class="care-plan__feature-item">New photos &amp; offers</span>
-              <span class="care-plan__feature-item">Security patches</span>
-              <span class="care-plan__feature-item">Bug fixes</span>
-              <span class="care-plan__feature-item">Priority support</span>
+              <span class="care-plan__feature-item" data-i18n="care-f1">Hosting &amp; uptime monitoring</span>
+              <span class="care-plan__feature-item" data-i18n="care-f2">Content updates</span>
+              <span class="care-plan__feature-item" data-i18n="care-f3">New photos &amp; offers</span>
+              <span class="care-plan__feature-item" data-i18n="care-f4">Security patches</span>
+              <span class="care-plan__feature-item" data-i18n="care-f5">Bug fixes</span>
+              <span class="care-plan__feature-item" data-i18n="care-f6">Priority support</span>
             </div>
           </div>
           <div class="care-plan-card__right">
@@ -164,7 +165,7 @@
               <span class="care-plan__currency">BD</span>
               <span class="care-plan__amount">30</span>
             </div>
-            <div class="care-plan__period">PER MONTH</div>
+            <div class="care-plan__period" data-i18n="care-period">PER MONTH</div>
           </div>
         </div>
       </div>
@@ -173,28 +174,28 @@
     <!-- Process -->
     <section class="process-section fade-up" aria-labelledby="process-heading">
       <div class="container">
-        <span class="eyebrow">How It Works</span>
-        <h2 id="process-heading" class="section-title" style="font-size:30px;">A simple 4-step process.</h2>
+        <span class="eyebrow" data-i18n="process-eyebrow">How It Works</span>
+        <h2 id="process-heading" class="section-title" style="font-size:30px;" data-i18n="process-title">A simple 4-step process.</h2>
         <div class="process-grid" role="list">
           <div class="process-step" role="listitem">
-            <div class="process-step__num">STEP 01</div>
-            <div class="process-step__title">Discovery Call</div>
-            <p class="process-step__desc">15-minute chat about your business, goals, and what success looks like for you.</p>
+            <div class="process-step__num" data-i18n="step-01-num">STEP 01</div>
+            <div class="process-step__title" data-i18n="step-01-title">Discovery Call</div>
+            <p class="process-step__desc" data-i18n="step-01-desc">15-minute chat about your business, goals, and what success looks like for you.</p>
           </div>
           <div class="process-step" role="listitem">
-            <div class="process-step__num">STEP 02</div>
-            <div class="process-step__title">Design &amp; Build</div>
-            <p class="process-step__desc">I design and build your site, keeping you updated. You see progress along the way.</p>
+            <div class="process-step__num" data-i18n="step-02-num">STEP 02</div>
+            <div class="process-step__title" data-i18n="step-02-title">Design &amp; Build</div>
+            <p class="process-step__desc" data-i18n="step-02-desc">I design and build your site, keeping you updated. You see progress along the way.</p>
           </div>
           <div class="process-step" role="listitem">
-            <div class="process-step__num">STEP 03</div>
-            <div class="process-step__title">Review &amp; Refine</div>
-            <p class="process-step__desc">You review the live preview. We refine until it's exactly what you want.</p>
+            <div class="process-step__num" data-i18n="step-03-num">STEP 03</div>
+            <div class="process-step__title" data-i18n="step-03-title">Review &amp; Refine</div>
+            <p class="process-step__desc" data-i18n="step-03-desc">You review the live preview. We refine until it's exactly what you want.</p>
           </div>
           <div class="process-step" role="listitem">
-            <div class="process-step__num">STEP 04</div>
-            <div class="process-step__title">Launch &amp; Live</div>
-            <p class="process-step__desc">Site goes live on your domain. You're online and ready for customers.</p>
+            <div class="process-step__num" data-i18n="step-04-num">STEP 04</div>
+            <div class="process-step__title" data-i18n="step-04-title">Launch &amp; Live</div>
+            <p class="process-step__desc" data-i18n="step-04-desc">Site goes live on your domain. You're online and ready for customers.</p>
           </div>
         </div>
       </div>
@@ -204,12 +205,12 @@
     <section class="notes-section fade-up" aria-labelledby="notes-heading">
       <div class="container">
         <div class="notes-box">
-          <div class="notes-box__title" id="notes-heading">Good to Know</div>
+          <div class="notes-box__title" id="notes-heading" data-i18n="notes-title">Good to Know</div>
           <ul class="notes-list">
-            <li class="notes-list__item"><span class="notes-list__arrow" aria-hidden="true">→</span>50% deposit to start, 50% on launch — no surprises</li>
-            <li class="notes-list__item"><span class="notes-list__arrow" aria-hidden="true">→</span>All packages include domain &amp; hosting setup guidance</li>
-            <li class="notes-list__item"><span class="notes-list__arrow" aria-hidden="true">→</span>Pricing excludes domain and hosting fees (typically BD 15–25/year)</li>
-            <li class="notes-list__item"><span class="notes-list__arrow" aria-hidden="true">→</span>Custom features outside listed packages quoted separately</li>
+            <li class="notes-list__item"><span class="notes-list__arrow" aria-hidden="true">→</span><span data-i18n="note-1">50% deposit to start, 50% on launch — no surprises</span></li>
+            <li class="notes-list__item"><span class="notes-list__arrow" aria-hidden="true">→</span><span data-i18n="note-2">All packages include domain &amp; hosting setup guidance</span></li>
+            <li class="notes-list__item"><span class="notes-list__arrow" aria-hidden="true">→</span><span data-i18n="note-3">Pricing excludes domain and hosting fees (typically BD 15–25/year)</span></li>
+            <li class="notes-list__item"><span class="notes-list__arrow" aria-hidden="true">→</span><span data-i18n="note-4">Custom features outside listed packages quoted separately</span></li>
           </ul>
         </div>
       </div>
@@ -220,11 +221,11 @@
       <div class="container">
         <div class="final-cta__card">
           <div>
-            <span class="eyebrow final-cta__eyebrow">Ready to Start?</span>
-            <div class="final-cta__title">Let's build something good.</div>
-            <div class="final-cta__sub">Reach out on WhatsApp to book your discovery call.</div>
+            <span class="eyebrow final-cta__eyebrow" data-i18n="cta-eyebrow">Ready to Start?</span>
+            <div class="final-cta__title" data-i18n="cta-title">Let's build something good.</div>
+            <div class="final-cta__sub" data-i18n="cta-sub">Reach out on WhatsApp to book your discovery call.</div>
           </div>
-          <a href="https://wa.me/97333330340" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Message Najjar Development on WhatsApp">
+          <a href="https://wa.me/97333330340" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Message Najjar Development on WhatsApp" data-i18n="btn-whatsapp">
             Message on WhatsApp →
           </a>
         </div>
@@ -238,9 +239,9 @@
     <div class="container">
       <a href="index.html" class="brand-mark" aria-label="Najjar Development — Home">
         <div class="brand-mark__dot" aria-hidden="true"></div>
-        <span class="brand-mark__name">Najjar Development</span>
+        <span class="brand-mark__name" data-i18n="brand-name">Najjar Development</span>
       </a>
-      <span class="footer-strip__copy">&copy; 2026 Najjar Development — Kingdom of Bahrain</span>
+      <span class="footer-strip__copy" data-i18n="footer-copy">&copy; 2026 Najjar Development — Kingdom of Bahrain</span>
     </div>
   </footer>
 
