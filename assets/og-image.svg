@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+
+  <!-- Subtle grid texture lines -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="#1A1A1A" stroke-width="1"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#1A1A1A" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="#1A1A1A" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="#1A1A1A" stroke-width="1"/>
+
+  <!-- Orange accent bar top -->
+  <rect x="80" y="80" width="60" height="4" fill="#FF5722"/>
+
+  <!-- Brand dot -->
+  <circle cx="80" cy="315" r="18" fill="#FF5722"/>
+
+  <!-- Brand name -->
+  <text x="116" y="323" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" letter-spacing="4" text-anchor="start">NAJJAR DEVELOPMENT</text>
+
+  <!-- Divider line -->
+  <rect x="80" y="356" width="60" height="3" fill="#FF5722"/>
+
+  <!-- Main headline -->
+  <text x="80" y="430" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#FFFFFF" letter-spacing="-2">Websites that make</text>
+  <text x="80" y="516" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#FF5722" letter-spacing="-2">your business</text>
+  <text x="80" y="602" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#FFFFFF" letter-spacing="-2">look serious.</text>
+
+  <!-- Eyebrow label top right -->
+  <text x="1120" y="107" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#FF5722" letter-spacing="2" text-anchor="end">WEB DESIGN — BAHRAIN</text>
+
+  <!-- Bottom right: URL -->
+  <text x="1120" y="575" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#555555" text-anchor="end">najjar.dev</text>
+</svg>
